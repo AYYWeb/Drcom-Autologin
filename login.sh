@@ -1,7 +1,7 @@
 nic="eth3"
+url="172.31.1.2"
 account=""
 password="123456"
-url_ip="172.31.1.2"
 
 login( ){
 ip=$(ifconfig $nic |grep "inet addr"| cut -f 2 -d ":"|cut -f 1 -d " ")
@@ -18,9 +18,9 @@ login
 while true;do
 	if [ $(ping -c 1 -w 1 114.114.114.114 | grep "received" | cut -d " " -f 4) == "0" ];then
 		login
-		#echo "connecting!!"
+		#echo "[-]connecting!"
 	else
-		#echo "logined!"
+		#echo "[+]logined!"
 		sleep 2s
 	fi
 done
