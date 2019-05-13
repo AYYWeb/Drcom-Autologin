@@ -1,4 +1,4 @@
-nic="eth3"
+ni="eth3"		#
 url="172.31.1.2"
 account=""
 password="123456"
