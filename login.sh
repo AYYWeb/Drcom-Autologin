@@ -1,4 +1,4 @@
-ni="eth3"		#
+ni="eth3"		#获取到内网ip的网络接口
 url="172.31.1.2"
 account=""
 password="123456"
