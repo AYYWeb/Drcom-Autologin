@@ -4,7 +4,7 @@ account=""
 password="123456"
 
 login( ){
-ip=$(ifconfig $nic |grep "inet addr"| cut -f 2 -d ":"|cut -f 1 -d " ")
+ip=$(ifconfig $ni |grep "inet addr"| cut -f 2 -d ":"|cut -f 1 -d " ")
 url1="http://${url_ip}:801/eportal/?c=ACSetting&a=Login&protocol=http:&hostname=172.31.1.2&iTermType=1&wlanuserip="
 url2="&wlanacip=null&wlanacname=null&mac=00-00-00-00-00-00&ip="
 url3="&enAdvert=0&queryACIP=0&loginMethod=1"
